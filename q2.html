@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        section{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+        }
+
+        
+
+       
+
+        .card{
+            margin: 20px;
+            width: 21%;
+            height: auto;
+            border: 2px solid gray;
+            background-color: rgb(245, 240, 235);
+            box-shadow: 0px 0px 15px grey;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image{
+            margin: 10px;
+            width: auto;
+            height: auto;
+
+        }
+
+        img{
+            width: 100%;
+            aspect-ratio: 4/3;
+           
+            object-fit: cover;
+           
+        }
+
+        h2{
+            font-size: 30px;
+        }
+        p{
+            margin: 10px;
+            text-align: justify;
+        }
+
+        i{
+            margin: 10px;
+            align-self: flex-start;
+            font-size: 40px;
+        }
+
+        h3{
+            font-size: 30px;
+            padding: 5px;
+            background-color:rgb(204, 177, 142) ;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .card:hover{
+            transition: ease-in-out 0.2s;
+            transform: scale(0.96);
+            cursor: pointer;
+            box-shadow: 0px 0px 10px gray,
+                        0px 0px 20px gray,
+                        0px 0px 30px gray;
+        }
+
+        i:hover{
+            color: brown;
+        }
+
+        h3:hover{
+            border: 2px solid black;
+        }
+
+
+
+
+        @media screen and (max-width: 1400px){
+            section{
+                background-image: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );
+            }
+
+            .card{
+                width: 30%;
+            }
+
+            
+        }
+
+
+        @media screen and (max-width: 1200px){
+            section{
+                background-image: linear-gradient( 100deg,  rgba(141,190,134,1) 13.6%, rgba(230,251,198,1) 65.3%, rgba(255,255,255,1) 108.8% );
+            }
+
+            .card{
+                width: 45%;
+            }
+
+            
+        }
+       
+       
+        @media screen and (max-width: 800px){
+            section{
+                background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+            }
+
+            .card{
+                width: 90%;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+   <section>
+    
+    
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>New York</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+   
+    
+    
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/51363/london-tower-bridge-bridge-monument-51363.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>United Kingdom</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+    
+    
+    
+    
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/1707310/pexels-photo-1707310.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>United Arab Emirates</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+    
+   
+   
+    
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/10532256/pexels-photo-10532256.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>Thailand</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+       
+       
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/2434270/pexels-photo-2434270.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>Singapore</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+        
+        
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>France</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+       
+       
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/161251/senso-ji-temple-japan-kyoto-landmark-161251.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>Japan</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+        
+        
+        <div class="card">
+            <div class="image"><img src="https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+            <h2>Maldives</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi rem laborum eaque earum provident incidunt dolorem nostrum officia magnam consequuntur deleniti, ad nulla atque nesciunt nemo obcaecati eos reiciendis eius sint ex saepe esse? Nam veritatis laboriosam inventore expedita quas doloribus a saepe earum minus tenetur, fugit reiciendis ullam repellendus, ea id facere! Facere esse minus nesciunt ex voluptatibus cumque temporibus qui voluptas, quasi quo et debitis dolorum magnam accusamus incidunt. Harum, aspernatur atque voluptas quis officiis inventore sequi veritatis ex quos dolor necessitatibus porro quas eius sint rem quam possimus mollitia, neque consequuntur nam? Reprehenderit labore molestiae corporis.</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <h3>Read More</h3>
+        </div>
+    
+
+   </section>
+            
+
+            
+            
+
+
+</body>
+</html>
