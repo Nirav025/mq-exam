@@ -57,6 +57,10 @@
            
         }
 
+        .newbar{
+            display: none;
+        }
+
 
 
         @media screen and (max-width: 800px){
@@ -85,9 +89,47 @@
                 
             }
 
+            .barbtn{
+                font-size: 20px;
+                padding: 15px;
+                margin: 20px;
+                background-color: aqua;
+                border-radius: 10px;
+                color: black;
+            }
+
             li{
                 width: 100%;
                 color: black;
+            }
+
+            #sbar{
+
+                height: 100px;
+                width: 100px;
+               
+                
+                
+                padding: 15px;
+                margin: 20px;
+                background-color: aqua;
+                border-radius: 10px;
+                /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqLUC1HufpVy0thCYhMm6BuuwF6KpY8wFRIw&s); */
+                
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdes_R93KBQZaUKzSK8NDOONL02XPSJiqD3Q&s);
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: auto;
+                
+                
+            }
+
+
+            .newbar{
+                display: block;
+                margin-right: 40px;
             }
             
         }
@@ -106,13 +148,27 @@
         <div class="navlinks">
             <ul>
                 <div class="btn">Home</div>
+                <div class="btn">Home</div>
                 <div class="btn">Services</div>
                 <div class="btn">Product</div>
                 <div class="btn">Contact US</div>
             </ul>
         </div>
 
-        <div class="bars"> <i class="fa-solid fa-bars"></i></div>
+        <!-- <div class="bars"> <i class="fa-solid fa-bars"></i></div> -->
+
+        <div class="newbar">
+            
+            <select name="" id="sbar" class="bars">
+            <option value="select" class="barbtn"></option>
+            <option value="" class="barbtn">Home</option>
+            <option value="" class="barbtn">Services</option>
+            <option value="" class="barbtn">Product</option>
+            <option value="" class="barbtn">Product</option>
+        </select>
+    
+    </div>
+
 
        
 
